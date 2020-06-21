@@ -1,0 +1,85 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css');
+@import "../../footer/footer.component.css";
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+.col-lg-4 {
+    align-self: center;
+    line-height: 1.5;
+    margin-top: 35px;
+}
+
+.container {
+    background-color: bisque;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    /* position: relative;
+	min-height: 100%; */
+}
+
+.h4 {
+    padding: 10px 0 20px 0;
+    font-size: 24pt;
+}
+
+.map {
+    align-content: center;
+    margin: 40px 0 5px 0;
+}
+
+.material-icons {
+    font-size: 14px;
+}
+
+.pb-0 {
+    font-style: italic;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.row {
+    margin: 20px 0px 20px 10px;
+    padding-bottom: 20px;
+}
+
+#section {
+    background-image: url(assets/img/sp-main-3.jpg);
+    background-size: cover;
+}
+
+#yMap {
+    box-shadow: 0 0 0 2px black, 0 0 0 4px white, 0 0 0 12px #ad4e4e;
+    height: 100%;
+    margin: 20px 0px 20px -25px;
+    min-height: 480px;
+    width: 99%;
+}
+
+@media (min-width: 32em) {
+    .col-lg-4 {
+        margin-top: 0;
+    }
+
+    #yMap {
+        margin: 0 0 15px 0;
+        max-height: 360px;
+    }
+}
+
+@media (min-width: 40em) {
+    .col-lg-4 {
+        margin-top: 0;
+    }
+
+    #yMap {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
