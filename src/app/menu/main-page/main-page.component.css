@@ -1,35 +1,208 @@
 .about-us {
-    padding: 15px;
+  padding: 15px;
 }
 
 .about-us .caption {
-    transform: translateY(-100px);
-    opacity: 0;
+  transform: translateY(-100px);
+  opacity: 0;
 }
 
 .about-us .undercaption {
-    transform: translateY(200px);
-    opacity: 0;
+  transform: translateY(200px);
+  opacity: 0;
 }
 
 .about-us-all {
-    background-image: url(assets/img/sp-main-2.jpg);
-    background-size: cover;
-    padding: 100px;
+  background-image: url(assets/img/sp-main-2.jpg);
+  background-size: cover;
+  padding: 100px;
 }
 
 .about-us-back {
-    background-color: bisque;
-    opacity: 0.9;
-    padding: 20px;
+  background-color: bisque;
+  opacity: 0.9;
+  padding: 20px;
 }
 
 .border-main {
-    height: 20px;
-    margin-top: -65px;
+  height: 20px;
+  margin-top: -65px;
 }
 
-.carousel-item.img {
+.container {
+}
+
+.main-img {
+  background: url(../../../assets/img/sp-main-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; /* Фон не повторяется */
+  /* background-attachment: fixed; Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+  background-size: cover; /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+  min-height: 700px;
+}
+
+.main-img-text {
+  margin-right: auto;
+  padding-top: 45%;
+  text-align: end;
+}
+
+.main-img-text h1 {
+  font-size: 400%;
+  font-weight: bold;
+}
+.main-img-text h2 {
+  font-size: 200%;
+}
+
+.rw-wrapper {
+  width: 80%;
+  position: relative;
+  margin: 110px auto 0 auto;
+  font-family: "Bree Serif";
+  padding: 10px;
+}
+
+.rw-sentence {
+  margin: 0;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.rw-sentence span {
+  color: #444;
+  white-space: nowrap;
+  font-size: 200%;
+  font-weight: normal;
+}
+
+.rw-words {
+  display: inline;
+  text-indent: 10px;
+}
+
+.rw-words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  color: #6b969d;
+}
+
+.rw-words-1 span {
+  animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span {
+  animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) {
+  animation-delay: 3s;
+  color: #6b889d;
+}
+.rw-words span:nth-child(3) {
+  animation-delay: 6s;
+  color: #6b739d;
+}
+.rw-words span:nth-child(4) {
+  animation-delay: 9s;
+  color: #7a6b9d;
+}
+.rw-words span:nth-child(5) {
+  animation-delay: 12s;
+  color: #8d6b9d;
+}
+.rw-words span:nth-child(6) {
+  animation-delay: 15s;
+  color: #9b6b9d;
+}
+
+@keyframes rotateWordsFirst {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    height: 0px;
+  }
+  8% {
+    opacity: 1;
+    height: 60px;
+  }
+  19% {
+    opacity: 1;
+    height: 60px;
+  }
+  25% {
+    opacity: 0;
+    height: 60px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateWordsSecond {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    width: 0px;
+  }
+  10% {
+    opacity: 0.3;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
     width: 100%;
-    height: 100%;
+  }
+  27% {
+    opacity: 0;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-img-text {
+    margin-right: -30px;
+    padding-top: 70%;
+  }
+
+  .main-img-text h1 {
+    font-size: 500%;
+  }
+
+  .main-img-text h2 {
+    font-size: 250%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-img-text {
+    margin-right: -70px;
+    padding-top: 50%;
+  }
+
+  .main-img-text h1 {
+    font-size: 500%;
+  }
+
+  .main-img-text h2 {
+    font-size: 250%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-img-text {
+    padding-top: 43%;
+    padding-right: 5%;
+  }
+
+  .main-img-text h1 {
+    font-size: 500%;
+  }
+
+  .main-img-text h2 {
+    font-size: 250%;
+  }
 }
