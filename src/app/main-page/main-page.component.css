@@ -13,7 +13,7 @@
 }
 
 .about-us-all {
-  background-image: url(assets/img/sp-main-2.jpg);
+  background-image: url(../../assets/img/sp-main-2.jpg);
   background-size: cover;
   padding: 100px;
 }
@@ -34,7 +34,7 @@
 }
 
 .main-img {
-  background: url(../../../assets/img/sp-main-1.jpg);
+  background: url(../../assets/img/sp-main-1.jpg);
   background-position: center center;
   background-repeat: no-repeat; /* Фон не повторяется */
   /* background-attachment: fixed; Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */

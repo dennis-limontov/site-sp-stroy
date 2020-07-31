@@ -1,3 +1,18 @@
+.description {
+  background-color: bisque;
+  color: black;
+  margin: 5px;
+  padding: 0px 8px 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+.info div > .description {
+  display: none;
+}
+.info div:hover > .description {
+  display: block;
+}
+
 .gc div:hover {
   -webkit-filter: drop-shadow(3px 5px 5px black);
   filter: drop-shadow(3px 5px 5px black);
@@ -5,8 +20,8 @@
 
 .info {
   color: bisque;
-  font-size: 14pt;
-  margin-left: 20px;
+  font-size: 12pt;
+  margin: 8px 20px 10px 40px;
 }
 
 .info:hover {
@@ -14,17 +29,40 @@
   filter: drop-shadow(3px 5px 5px black);
 }
 
+.info div a {
+  color: #d5f3b3;
+  text-decoration: none;
+}
+
 .logo {
   border: 1px solid #ad4e4e;
+  height: auto;
+  width: 160px;
+}
+
+.logo:hover {
+  -webkit-filter: drop-shadow(0 0 10px black);
+  filter: drop-shadow(0 0 10px black);
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
 }
 
 .navbar {
   flex-wrap: inherit;
-  margin-top: -50px;
 }
 
 .navbar-brand {
+  margin: 10px 20px;
   padding: 5px;
+}
+
+.navbar-collapse {
+  align-self: start;
+  flex-flow: wrap;
+  max-width: 500px;
 }
 
 .navbar-nav {
@@ -32,14 +70,18 @@
 }
 
 .nav-item {
+  display: inline-block;
+  position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .nav-item:hover {
   box-shadow: inset 0 0 0 23px #ad4e4e;
+}
+.nav-item:hover .list {
+  display: block;
 }
 
 .nav-link {
@@ -50,6 +92,26 @@
 
 li.nav-item {
   vertical-align: center;
+}
+
+header {
+  background-color: #343a40;
+}
+
+li.nav-item {
+  vertical-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {

@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "build": "ng build",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +22,7 @@
     "animejs": "^3.2.0",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.5",
+    "fa-icons": "^0.2.0",
     "jquery": "^3.5.1",
     "material-design-icons": "^3.0.1",
     "rxjs": "^6.5.5",
