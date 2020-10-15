@@ -1,3 +1,8 @@
+.price-list {
+  list-style-type: none;
+  margin-left: -28px;
+}
+
 .services {
   background-image: url(../../../assets/img/sp-main-3.jpg);
   background-position: left top;
@@ -10,7 +15,7 @@
 }
 
 .services-body {
-  background-color: #ad4e4e;
+  background-color: bisque;
   margin: 0 80px;
   opacity: 0.95;
 }
@@ -33,6 +38,37 @@
   margin-top: 20px;
   font-size: 20pt;
   line-height: 2em;
+}
+
+.table-price-name {
+  padding: 0 10px;
+  text-align: left!important;
+}
+
+.table-start th {
+  font-weight: bold!important;
+}
+
+summary:active, summary:hover, summary:focus {
+  outline: none;
+  outline-offset: none;
+}
+summary:hover {
+  color: #ad4e4e;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-spacing: 5px;
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 20px;
+}
+
+th {
+  font-weight: 400;
+  min-width: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

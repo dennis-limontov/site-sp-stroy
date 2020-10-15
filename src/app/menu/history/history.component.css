@@ -1,0 +1,76 @@
+.history {
+  background-image: url(../../../assets/img/sp-main-4.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+  -moz-background-size: 115%; /* Firefox 3.6+ */
+  -webkit-background-size: 115%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 115%; /* Opera 9.6+ */
+  background-size: 115%;
+  min-height: 100vh;
+}
+
+.history-body {
+  background-color: bisque;
+  margin: 0 80px;
+  opacity: 0.95;
+}
+
+.history-caption {
+  background-color: black;
+  color: #ad4e4e;
+  padding: 20px 40px;
+}
+
+.history-space {
+  height: 50px;
+}
+
+.history-text {
+  padding: 20px 40px;
+}
+
+.history-undercaption {
+  margin-top: 20px;
+  font-size: 15pt;
+  font-style: italic;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  .history {
+    -moz-background-size: 150%; /* Firefox 3.6+ */
+    -webkit-background-size: 150%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 150%; /* Opera 9.6+ */
+    background-size: 150%;
+  }
+
+  .history-body {
+    margin: 0 60px;
+  }
+
+  .history-space {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history {
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  .history-body {
+    margin: 0;
+  }
+
+  .history-space {
+    height: 40px;
+  }
+
+  .history-text {
+    padding: 10px 20px;
+  }
+}

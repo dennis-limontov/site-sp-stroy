@@ -58,6 +58,107 @@
   height: 275px;
 }
 
+.border-main-block {
+  position: relative;
+  margin: 0 auto;
+  min-height: 300px;
+  width: 80%;
+}
+
+.border-main-text {
+  margin-left: 50px;
+}
+
+.border-main-text.p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.content-table {
+  padding: 10%;
+}
+
+.main-gallery {
+  background-color: white;
+}
+
+.main-line {
+  border-top: 1px solid #d5f3b3;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.main-line-dark {
+  border-top: 1px solid #16181a;
+}
+
+.main-slogan {
+  font-size: 40pt;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-slogan-dark {
+  color: #16181a;
+}
+
+.main-slogan-white {
+  color: white;
+}
+
+.pdf a {
+  color: white;
+  font-size: 14pt;
+}
+.pdf a:hover {
+  color: #d5f3b3;
+}
+
+.slider {
+  font-size: 30pt;
+  text-align-last: center;
+}
+
+.slider a {
+  padding-right: 50px;
+}
+
+.text-1 {
+  color: #009236;
+  font-size: 2.8em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-2 {
+  font-size: 1.4em;
+}
+
+.undercaption {
+  color: #16181a;
+}
+
+.w-100 {
+  min-height: 800px;
+}
+
+#myCarousel {
+  height: 800px;
+}
+
+#t1 {
+  font-size: 66px;
+  font-weight: 400;
+}
+
+#t2 {
+  font-size: 36px;
+}
+
 /* .rw-wrapper {
   width: 80%;
   position: relative;

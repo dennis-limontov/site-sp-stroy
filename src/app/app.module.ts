@@ -1,16 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ContactsComponent } from './menu/contacts/contacts.component';
-import { ProductsComponent } from './menu/products/products.component';
+import { HistoryComponent } from './menu/history/history.component';
 import { ServicesComponent } from './menu/services/services.component';
 import { NewsComponent } from './menu/news/news.component';
-import { PortfolioComponent } from './menu/portfolio/portfolio.component';
 
 // определение маршрутов
 const appRoutes: Routes =[
@@ -29,9 +29,9 @@ const appRoutes: Routes =[
     component: MainPageComponent
   },
   {
-    path: 'products',
+    path: 'history',
     pathMatch: 'full',
-    component: ProductsComponent
+    component: HistoryComponent
   },
   {
     path: 'services',
@@ -42,11 +42,6 @@ const appRoutes: Routes =[
     path: 'news',
     pathMatch: 'full',
     component: NewsComponent
-  }, 
-  {
-    path: 'portfolio',
-    pathMatch: 'full',
-    component: PortfolioComponent
   },
   {
     path: '**',
@@ -60,14 +55,14 @@ const appRoutes: Routes =[
     HeaderComponent,
     FooterComponent,
     MainPageComponent,
-    ProductsComponent,
+    HistoryComponent,
     ContactsComponent,
     NewsComponent,
-    ServicesComponent,
-    PortfolioComponent      
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
+    MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
