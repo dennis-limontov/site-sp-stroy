@@ -61,6 +61,7 @@ body .btn-primary {
 }
 
 .carousel-indicators {
+  font-family: 'Font Awesome';
   margin-bottom: 35px; /*18px*/
 }
 

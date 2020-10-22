@@ -124,11 +124,8 @@ nav {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
-  .info {
-    display: none;
-  }
-}
+/* @media screen and (max-width: 1024px) {
+} */
 
 @media screen and (max-width: 768px) {
   .gc {
@@ -137,11 +134,14 @@ nav {
     margin-top: -135px;
   }
 
+  .info {
+    display: none;
+  }
+
   .logo {
     overflow: hidden;
     display: flex;
-    height: 141px;
-    width: 188px;
+    width: 145px;
   }
 
   .logo img {
@@ -151,11 +151,16 @@ nav {
 
   .navbar {
     min-height: 300px;
+    padding: 0;
   }
 
   .navbar-brand {
     align-self: flex-start;
     padding: 15px;
+  }
+
+  .navbar-expand-md {
+    padding: 15px 0;
   }
 
   .navbar-nav {

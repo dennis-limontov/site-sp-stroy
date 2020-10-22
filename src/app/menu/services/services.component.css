@@ -11,7 +11,7 @@
   -webkit-background-size: 115%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 115%; /* Opera 9.6+ */
   background-size: 115%;
-  min-height: 100vh;
+  min-height: calc(100vh - 599px);
 }
 
 .services-body {

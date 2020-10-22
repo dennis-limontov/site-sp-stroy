@@ -353,10 +353,6 @@
   .rw-sentence {
     font-size: calc(3.5vw + 6px);
   }
-
-  .rw-words span {
-    padding-right: 6%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -364,25 +360,25 @@
     padding: 40px;
   }
 
-  .main-img-text h1 {
+  .main-slideshow-text h1 {
     font-size: 4.5em;
+  }
+
+  .main-slogan {
+    font-size: 30pt;
   }
 
   .rw-words {
     line-height: 1.7em;
-  }
-
-  .rw-words span {
-    padding-right: 6.5%;
-  }
-
-  .main-img-text-space {
-    height: 325px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .about-us-all {
     padding: 0px;
+  }
+
+  .main-slideshow-text h1 {
+    font-size: 3em;
   }
 }
