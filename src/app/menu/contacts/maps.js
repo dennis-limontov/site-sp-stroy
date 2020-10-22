@@ -2,14 +2,16 @@
 
 import ymaps from "ymaps";
 
-export default function() {
+export default function () {
   try {
-    ymaps.load().then(maps => {
+    ymaps.load().then((maps) => {
       maps.ready(() => {
-        new maps.Map("yMap", {
-          center: [52.450600, 30.974226],
-          zoom: 17
+        const placemark = new maps.Placemark([52.450900, 30.975475]);
+        const map = new maps.Map("yMap", {
+          center: [52.450900, 30.975475],
+          zoom: 17,
         });
+        map.geoObjects.add(placemark);
       });
     });
   } catch (error) {
