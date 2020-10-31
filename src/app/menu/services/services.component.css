@@ -40,6 +40,16 @@
   line-height: 2em;
 }
 
+.table-start-1, .table-start-3 {
+  width: 8%;
+}
+.table-start-2 {
+  width: 48%;
+}
+.table-start-4, .table-start-5 {
+  width: 18%;
+}
+
 .table-price-name {
   padding: 0 10px;
   text-align: left!important;
@@ -47,6 +57,24 @@
 
 .table-start th {
   font-weight: bold!important;
+}
+
+.details-1, .details-2 {
+  transition: height 1s ease;
+}
+.details-1:not([open]), .details-2:not([open]) {
+  height: 2.15em;
+}
+.details-1[open] {
+  height: 22.5em;
+}
+.details-2[open] {
+  height: 13.5em;
+}
+.details-1[open] table, .details-2[open] table {
+	animation-name: invisiblyGrowFontSize, fadeIn;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
 }
 
 summary:active, summary:hover, summary:focus {
@@ -71,7 +99,46 @@ th {
   text-align: center;
 }
 
+@keyframes invisiblyGrowFontSize {
+	0% {
+    font-size: 0;
+    opacity: 0;
+	}
+	100% {
+    font-size: 1em;
+    opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+  .details-1:not([open]) {
+    height: 4em;
+  }
+  .details-1[open] {
+    height: 24.35em;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .details-1:not([open]) {
+    height: 2.15em;
+  }
+  .details-1[open] {
+    height: 100%;
+  }
+  .details-2[open] {
+    height: 100%;
+  }
+
   .services {
     -moz-background-size: 150%; /* Firefox 3.6+ */
     -webkit-background-size: 150%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -88,7 +155,17 @@ th {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .details-1:not([open]) {
+    height: 4em;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .details-2 {
+    margin-bottom: 35px;
+  }
+
   .services {
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -107,5 +184,9 @@ th {
 
   .services-text {
     padding: 10px 20px;
+  }
+
+  table {
+    margin: 10px 5px 10px 0;
   }
 }

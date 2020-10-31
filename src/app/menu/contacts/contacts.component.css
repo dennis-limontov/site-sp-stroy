@@ -26,6 +26,21 @@
     margin-top: 20px;
 }
 
+.details {
+    transition: height 1s ease;
+}
+.details:not([open]) {
+    height: 0.8em;
+}
+.details[open] {
+    height: 16em;
+}
+.details[open] .pre-table {
+    animation-name: invisiblyGrowFontSize, fadeIn;
+    animation-duration: 500ms, 200ms;
+    animation-delay: 0ms, 500ms;
+}
+
 .h4 {
     padding: 10px 0 20px 0;
     font-size: 20pt;
@@ -91,9 +106,36 @@ summary:hover {
     color: #ad4e4e;
 }
 
+@keyframes invisiblyGrowFontSize {
+	0% {
+        font-size: 0;
+        opacity: 0;
+	}
+	100% {
+        font-size: 1em;
+        opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
 @media screen and (max-width: 992px) {
     .col-lg-4 {
         margin-top: 30px;
+    }
+
+    .details:not([open]) {
+        height: 3em;
+    }
+    .details[open] {
+        height: 20em;
     }
 
     .table td {
@@ -119,11 +161,21 @@ summary:hover {
         max-width: 100%;
     }
 
+    .details:not([open]) {
+        height: 3.5em;
+    }
+
     .map {
         margin: 40px -5px 5px 5px;
     }
 
     summary {
         margin: 30px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .details[open] {
+        height: 28em;
     }
 }

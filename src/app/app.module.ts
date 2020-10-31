@@ -10,10 +10,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ContactsComponent } from './menu/contacts/contacts.component';
 import { HistoryComponent } from './menu/history/history.component';
 import { ServicesComponent } from './menu/services/services.component';
-import { NewsComponent } from './menu/news/news.component';
 
 // определение маршрутов
-const appRoutes: Routes =[
+const appRoutes: Routes = [
   {
     path: '',
     component: MainPageComponent
@@ -24,11 +23,6 @@ const appRoutes: Routes =[
     component: ContactsComponent
   },
   {
-    path: 'main',
-    pathMatch: 'full',
-    component: MainPageComponent
-  },
-  {
     path: 'history',
     pathMatch: 'full',
     component: HistoryComponent
@@ -37,11 +31,6 @@ const appRoutes: Routes =[
     path: 'services',
     pathMatch: 'full',
     component: ServicesComponent
-  }, 
-  {
-    path: 'news',
-    pathMatch: 'full',
-    component: NewsComponent
   },
   {
     path: '**',
@@ -57,7 +46,6 @@ const appRoutes: Routes =[
     MainPageComponent,
     HistoryComponent,
     ContactsComponent,
-    NewsComponent,
     ServicesComponent
   ],
   imports: [
