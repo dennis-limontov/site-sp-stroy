@@ -140,7 +140,21 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
+  .contact-us {
+    margin: -205px 0 0 -280px;
+    position: absolute;
+  }
+
+  .description {
+        background-color: transparent;
+        color: white;
+        margin: -40px 0 20px 10px;
+        padding: none;
+        white-space: none;
+        max-height: 30px;
+  }
+
   .gc {
     position: absolute;
     margin-left: -220px;
@@ -148,18 +162,18 @@ nav {
   }
 
   .info {
-    display: none;
+    font-size: 10pt;
+    line-height: 4rem;
   }
 
   .logo {
     overflow: hidden;
     display: flex;
-    width: 145px;
+    width: 180px;
   }
 
   .logo img {
     height: 100%;
-    width: auto;
   }
 
   .navbar {
@@ -172,12 +186,20 @@ nav {
     padding: 15px;
   }
 
+  .navbar-collapse {
+    flex-basis: 100%!important;
+  }
+
   .navbar-expand-md {
     padding: 15px 0;
+  }
+  .navbar-expand-md .navbar-collapse {
+    display: unset!important;
   }
 
   .navbar-nav {
     padding-left: 0px;
+    flex-direction: column!important;
   }
 
   .nav-item {
